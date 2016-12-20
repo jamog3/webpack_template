@@ -1,0 +1,40 @@
+@charset "utf-8"
+
+@import '../../node_modules/ress/ress'
+
+@import '_partial/variables'
+// @import '_partial/iconfont'
+// @import '_partial/sprites'
+@import '_partial/base'
+
+
+.hoge
+  padding: 10px
+  color: #FFF
+  display: flex
+  // +sprite($sample2)
+  @media screen and (max-width: $spWidth)
+    display: block
+
+
+.hoge2
+  display: flex
+  &:before
+    display: block
+    // +iconfont($si-glyph-anchor)
+  @media screen and (max-width: $spWidth)
+    display: block
+
+.hoge3
+  display: flex
+  @media screen and (max-width: $spWidth)
+    display: block
+
+.hoge4
+  display: flex
+  @media screen and (max-width: $spWidth)
+    display: inline-block
+
+.hoge5
+  display: flex
+
